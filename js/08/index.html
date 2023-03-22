@@ -52,6 +52,7 @@
         ];
 
         button.onclick = () => {
+          listNest.innerHTML = '';
           techs.forEach((item) => {
             listNest.innerHTML += `<li class="list-group-item">${item}</li>`;
           });
