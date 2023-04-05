@@ -13,7 +13,11 @@
         <h1>Contando de 1 a 10</h1>
         <p>Quem nunca contou até 10 né?</p>
         <hr>
-        <div class="mt-3" id="saida"></div>
+        <div class="mt-3" id="saida">
+            <?php foreach(range(1, 10) as $i): ?>
+                <p><?= $i ?></p>
+            <?php endforeach; ?>
+        </div>
     </div>
 
     <style>
